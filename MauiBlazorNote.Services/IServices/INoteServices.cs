@@ -1,4 +1,5 @@
-﻿using MauiBlazorNote.ViewModel.Note;
+﻿using MauiBlazorNote.Data.Entity;
+using MauiBlazorNote.ViewModel.Note;
 
 namespace MauiBlazorNote.Services.IServices
 {

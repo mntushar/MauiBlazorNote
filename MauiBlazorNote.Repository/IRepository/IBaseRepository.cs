@@ -12,6 +12,6 @@ namespace MauiBlazorNote.Repository.IRepository
         Task<List<TEntity>> GetItemListAsync(Expression<Func<TEntity, bool>> pedicate, int skip, int take);
         Task<List<TEntity>> GetItemListAsync();
         Task<List<TEntity>> GetItemListAsync(int skip, int take);
-        Task DeleteItemAsync(int id);
+        Task<bool> DeleteItemAsync(int id);
     }
 }

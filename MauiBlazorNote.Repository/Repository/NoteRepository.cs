@@ -9,10 +9,12 @@ namespace MauiBlazorNote.Repository.Repository
     {
         private SQLiteAsyncConnection _database;
         private IConstants _contants;
+        private dynamic _dto;
 
-        public NoteRepository(IConstants constants) : base(constants)
+        public NoteRepository(IConstants constants, INoteDto dto) : base(constants, dto)
         {
             _contants = constants;
+            _dto = dto;
         }
 
         private async Task Init()
