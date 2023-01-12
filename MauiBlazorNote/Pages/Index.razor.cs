@@ -11,17 +11,17 @@ namespace MauiBlazorNote.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            var data = new NoteViewModel()
-            {
-                Id = 1,
-                Title = "Test",
-                Note = "test",
-                IsDeactive = true,
-                IsProtected = true,
-                UpdateDate = DateTime.Now,
-                CreateDate = DateTime.Now,
-            };
-            await NoteServices.InsertAsync(data);
+            //var data = new NoteViewModel()
+            //{
+            //    Id = 1,
+            //    Title = "Test",
+            //    Note = "test",
+            //    IsDeactive = true,
+            //    IsProtected = true,
+            //    UpdateDate = DateTime.Now,
+            //    CreateDate = DateTime.Now,
+            //};
+            //await NoteServices.InsertAsync(data);
         }
     }
 }
