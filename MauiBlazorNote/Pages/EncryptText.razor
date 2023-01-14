@@ -1,0 +1,55 @@
+﻿@page "/encryptText"
+
+<div>
+    <h1>Wecome to text locker</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-12 m-auto">
+            <form onsubmit="return false">
+                <div class="form-floating">
+                    <textarea style="overflow:auto; height: 100px" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                              @bind="Text"></textarea>
+                    <label for="floatingTextarea2">Please Enter your Text</label>
+                </div>
+
+                <div class="mb-3 mt-2">
+                    <label for="exampleInputPassword1" class="form-label">Please Enter Your Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" @bind="UserKey">
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="EncryptRadio"
+                           @onchange="(() => ChangeEncryptType(true))" checked>
+                    <label class="form-check-label" for="EncryptRadio">
+                        Encrypt
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="DecryptRadio"
+                           @onchange="(() => ChangeDecryptType(true))">
+                    <label class="form-check-label" for="DecryptRadio">
+                        Decrypt
+                    </label>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 m-auto">
+                        <button type="submit" class="btn btn-primary" @onclick="AesSubmit">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            @if (!string.IsNullOrEmpty(OutputType))
+            {
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <p class="text-success m-1">Your @OutputType Text:</p>
+                        <textarea style="overflow:auto; height: 100px" class="form-control m-3" placeholder="Leave a comment here" id="floatingTextarea3"
+                              @bind="Output"></textarea>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
