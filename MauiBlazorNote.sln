@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiBlazorNote.Repository",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiBlazorNote.Library", "MauiBlazorNote.Library\MauiBlazorNote.Library.csproj", "{5C436B83-F561-4B01-A027-BA3E40DB77A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBlazorNote.UnitTesting", "MauiBlazorNote.UnitTesting\MauiBlazorNote.UnitTesting.csproj", "{07BF1015-3827-40CF-8B7F-3CBAEDC56494}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBlazorNote.UnitTesting", "MauiBlazorNote.UnitTesting\MauiBlazorNote.UnitTesting.csproj", "{00908B99-4E2F-44DD-A9FC-08980136C504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,10 +48,10 @@ Global
 		{5C436B83-F561-4B01-A027-BA3E40DB77A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C436B83-F561-4B01-A027-BA3E40DB77A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C436B83-F561-4B01-A027-BA3E40DB77A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07BF1015-3827-40CF-8B7F-3CBAEDC56494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07BF1015-3827-40CF-8B7F-3CBAEDC56494}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07BF1015-3827-40CF-8B7F-3CBAEDC56494}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07BF1015-3827-40CF-8B7F-3CBAEDC56494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00908B99-4E2F-44DD-A9FC-08980136C504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00908B99-4E2F-44DD-A9FC-08980136C504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00908B99-4E2F-44DD-A9FC-08980136C504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00908B99-4E2F-44DD-A9FC-08980136C504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
